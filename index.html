@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Prashant Thakur - CSE Student & Aspiring Full Stack Developer">
+    <title>Prashant Thakur | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <canvas id="bgCanvas" class="bg-canvas"></canvas>
+
+    <div class="mouse-glow" id="mouseGlow"></div>
+
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">PT</a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#github" class="nav-link">GitHub</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle">🌙</button>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main id="main-content">
+        <section id="home" class="hero section">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <p class="hero-greeting">Hello, I'm</p>
+                        <h1 class="hero-name">Prashant Thakur</h1>
+                        <div class="hero-titles">
+                            <span id="typing-text">CSE Student</span>
+                            <span class="divider">·</span>
+                            <span>Frontend Developer</span>
+                            <span class="divider">·</span>
+                            <span>Aspiring Full Stack & AI Engineer</span>
+                        </div>
+                        <p class="hero-tagline">Technology should solve problems, not create them.</p>
+                        <p class="hero-desc">Based in Mohali, Punjab — I build clean, purposeful software with focus on user experience.</p>
+                        <div class="hero-btns">
+                            <a href="#projects" class="btn btn-primary">Explore Projects</a>
+                            <a href="https://github.com/Prashant-thakur-23" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Visit GitHub</a>
+                        </div>
+                        <div class="hero-stats" id="heroStats">
+                            <div class="stat-item">
+                                <span class="stat-number" id="repoCount">--</span>
+                                <span class="stat-label">Repositories</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number" id="followerCount">--</span>
+                                <span class="stat-label">Followers</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number" id="followingCount">--</span>
+                                <span class="stat-label">Following</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-visual">
+    <div class="profile-wrapper">
+        <img id="githubAvatar" src="profile.jpeg" alt="Prashant Thakur" class="profile-img">
+        <div class="profile-placeholder" id="profileFallback">PT</div>
+    </div>
+</div>
+                </div>
+                <div class="scroll-hint">
+                    <span>Scroll</span>
+                    <div class="scroll-bar"><div class="scroll-dot"></div></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about section">
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="section-num">01</span>
+                    <h2>About Me</h2>
+                </div>
+                <div class="about-content reveal">
+                    <p class="about-intro"><strong>CSE student at CGC University</strong> with deep passion for building useful software. Clean code, analytical thinking, and curiosity drive my work.</p>
+                    <p>I bring <strong>strong communication</strong>, <strong>team collaboration</strong>, and <strong>leadership</strong> to every project. Fast learner, always exploring new tech.</p>
+                    <p>Currently working towards becoming a <strong>Full Stack Engineer</strong> while diving into <strong>AI & Machine Learning</strong>.</p>
+                    <div class="traits">
+                        <span>🧠 Analytical</span><span>💬 Communicative</span><span>🚀 Fast Learner</span>
+                        <span>🤝 Team Player</span><span>🎯 Detail-Oriented</span><span>🌟 Leadership</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills section">
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="section-num">02</span>
+                    <h2>Technical Skills</h2>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-group reveal">
+                        <h3>Languages</h3>
+                        <div class="skill-cards">
+                            <div class="skill-card">☕ Java</div>
+                            <div class="skill-card">🐍 Python</div>
+                            <div class="skill-card">⚡ C++</div>
+                            <div class="skill-card">📜 JavaScript</div>
+                            <div class="skill-card">🗄️ SQL</div>
+                        </div>
+                    </div>
+                    <div class="skill-group reveal">
+                        <h3>Frontend</h3>
+                        <div class="skill-cards">
+                            <div class="skill-card">🏗️ HTML5</div>
+                            <div class="skill-card">🎨 CSS3</div>
+                            <div class="skill-card">⚡ JavaScript</div>
+                        </div>
+                    </div>
+                    <div class="skill-group reveal">
+                        <h3>Database</h3>
+                        <div class="skill-cards"><div class="skill-card">📊 MySQL</div></div>
+                    </div>
+                    <div class="skill-group reveal">
+                        <h3>Tools</h3>
+                        <div class="skill-cards">
+                            <div class="skill-card">🔀 Git</div>
+                            <div class="skill-card">🐙 GitHub</div>
+                            <div class="skill-card">💻 VS Code</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="github-languages reveal" id="githubLanguages">
+                    <h3>Languages Used Across Repos</h3>
+                    <div class="languages-container" id="languagesContainer">
+                        <div class="skeleton-bar"></div>
+                        <div class="skeleton-bar"></div>
+                        <div class="skeleton-bar"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects section">
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="section-num">03</span>
+                    <h2>Mini Projects</h2>
+                    <p class="section-sub">11 projects — each one taught me something new</p>
+                </div>
+                <div class="filter-bar reveal">
+                    <button class="filter-btn active" data-filter="all">All (11)</button>
+                    <button class="filter-btn" data-filter="javascript">JavaScript (7)</button>
+                    <button class="filter-btn" data-filter="java">Java (2)</button>
+                    <button class="filter-btn" data-filter="html-css">HTML/CSS (8)</button>
+                </div>
+                <div class="projects-grid" id="projectsGrid"></div>
+            </div>
+        </section>
+
+        <section id="github" class="github section">
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="section-num">04</span>
+                    <h2>GitHub Repositories</h2>
+                    <p class="section-sub">Live data fetched from GitHub API</p>
+                </div>
+                <div class="github-profile reveal" id="githubProfile">
+                    <div class="skeleton-profile"></div>
+                </div>
+                <div class="github-repos-grid reveal" id="githubReposGrid">
+                    <div class="skeleton-repo"></div>
+                    <div class="skeleton-repo"></div>
+                    <div class="skeleton-repo"></div>
+                    <div class="skeleton-repo"></div>
+                </div>
+                <div class="github-actions reveal">
+                    <a href="https://github.com/Prashant-thakur-23" target="_blank" rel="noopener noreferrer" class="btn btn-primary">View All on GitHub →</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="learning" class="learning section">
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="section-num">05</span>
+                    <h2>Currently Learning</h2>
+                </div>
+                <div class="learning-grid">
+                    <div class="learn-card reveal">⚛️ React</div>
+                    <div class="learn-card reveal">🟢 Node.js</div>
+                    <div class="learn-card reveal">🚂 Express.js</div>
+                    <div class="learn-card reveal">🍃 MongoDB</div>
+                    <div class="learn-card reveal">🤖 AI</div>
+                    <div class="learn-card reveal">🧠 ML</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="education section">
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="section-num">06</span>
+                    <h2>Education</h2>
+                </div>
+                <div class="edu-card reveal">
+                    <div class="edu-year">2024 – 2028</div>
+                    <div>
+                        <h3>B.Tech Computer Science</h3>
+                        <p>CGC University, Mohali</p>
+                        <p>Semester 5 · CGPA: 7.5</p>
+                        <p class="coursework"><strong>Relevant Coursework:</strong> Data Structures, Algorithms, DBMS, Operating Systems, Computer Networks</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="certifications" class="certs section">
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="section-num">07</span>
+                    <h2>Certifications</h2>
+                </div>
+                <div class="certs-grid">
+                    <div class="cert-card reveal">📜 Java Fundamentals — Infosys Springboard</div>
+                    <div class="cert-card reveal">📜 Python Fundamentals — Infosys Springboard</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact section">
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="section-num">08</span>
+                    <h2>Get In Touch</h2>
+                </div>
+                <div class="contact-grid">
+                    <div class="contact-info reveal">
+                        <h3>Let's Build Something Meaningful Together.</h3>
+                        <p>Open to projects, ideas, and opportunities.</p>
+                        <div class="contact-links">
+                            <a href="mailto:prashantthakur02316@gmail.com">✉️ Email</a>
+                            <a href="https://github.com/Prashant-thakur-23" target="_blank" rel="noopener noreferrer">🐙 GitHub</a>
+                            <a href="#">💼 LinkedIn</a>
+                        </div>
+                    </div>
+                    <form class="contact-form reveal" id="contactForm">
+                        <input type="text" placeholder="Name" id="contactName" required>
+                        <input type="email" placeholder="Email" id="contactEmail" required>
+                        <textarea rows="5" placeholder="Message" id="contactMessage" required></textarea>
+                        <button type="submit" class="btn btn-primary" id="submitBtn">Send Message</button>
+                        <div id="formMsg"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p><strong>Prashant Thakur</strong> — Technology should solve problems, not create them.</p>
+            <div class="footer-links">
+                <a href="https://github.com/Prashant-thakur-23" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="mailto:prashantthakur02316@gmail.com">Email</a>
+            </div>
+            <button class="back-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑ Top</button>
+            <p class="footer-version">v2.0.0</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
